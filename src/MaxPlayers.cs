@@ -14,6 +14,9 @@ namespace MaxPlayersMod
         public static void Init()
         {
             var harmony = HarmonyInstance.Create("dev.meepen.maxplayers");
+            
+            // Patches all HarmonyPatch attributed methods in this assembly, this example has none though.
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
 
             var _base = typeof(RoR2.Networking.GameNetworkManager).GetNestedType("SvMaxPlayersConVar", BindingFlags.NonPublic);
             var _method = _base.GetMethod("SetString", BindingFlags.Instance | BindingFlags.Public);
