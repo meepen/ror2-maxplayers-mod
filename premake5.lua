@@ -72,26 +72,3 @@ project "Ready for Release"
     filter "configurations:Debug"
         defines "NDEBUG"
         optimize "Debug"
-
-project "ModLoader Manager"
-    kind "ConsoleApp"
-    language "C#"
-
-    targetdir "bin"
-    targetname "ror2-modloader-manager"
-
-    files {
-        "install/**.cs"
-    }
-
-    links {
-        "System.IO.Compression.FileSystem"
-    }
-
-    filter "configurations:Release"
-        defines "DEBUG"
-        optimize "Full"
-
-    filter "configurations:Debug"
-        defines "NDEBUG"
-        optimize "Debug"
