@@ -1,0 +1,3 @@
+bin/Mods/maxplayers.dll
+bin/Mods/maxplayers.pdb
+Risk of Rain 2_Data/Config/autoexec.cfg

@@ -48,3 +48,50 @@ workspace "maxplayers"
 
     filter "configurations:Debug"
         optimize "Debug"
+
+        
+project "Ready for Release"
+    kind "ConsoleApp"
+    language "C#"
+
+    targetdir "."
+    targetname "readyrelease"
+
+    files {
+        "build/**.cs"
+    }
+
+    links {
+        "System.IO.Compression.FileSystem"
+    }
+
+    filter "configurations:Release"
+        defines "DEBUG"
+        optimize "Full"
+
+    filter "configurations:Debug"
+        defines "NDEBUG"
+        optimize "Debug"
+
+project "ModLoader Manager"
+    kind "ConsoleApp"
+    language "C#"
+
+    targetdir "bin"
+    targetname "ror2-modloader-manager"
+
+    files {
+        "install/**.cs"
+    }
+
+    links {
+        "System.IO.Compression.FileSystem"
+    }
+
+    filter "configurations:Release"
+        defines "DEBUG"
+        optimize "Full"
+
+    filter "configurations:Debug"
+        defines "NDEBUG"
+        optimize "Debug"

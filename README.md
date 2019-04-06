@@ -2,9 +2,8 @@
 #### modifies sv_maxplayers to modify maxPlayers internally
 
 ## How to Install
-- Install [ror2-modloader](https://github.com/meepen/ror2-modloader)
-- Place this in the Mods folder
-- Done! Run sv_maxplayers 16 in console to change to 16 players
+- Install Meepen's Mod Loader ([thunderstore.io](https://thunderstore.io/package/meepen/Meepens_Mod_Loader/) [github](https://github.com/meepen/ror2-modloader))
+- Download and read the HOW TO INSTALL.txt
 
 ## How to Build
 - Install [ror2-modloader](https://github.com/meepen/ror2-modloader)

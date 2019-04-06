@@ -10,7 +10,7 @@ namespace MaxPlayersMod
 {
     public class MaxPlayers
     {
-        [ModEntry("Max Players", "1.0.0", "Meepen")]
+        [ModEntry("Max Players", "1.2.0", "Meepen")]
         public static void Init()
         {
             var harmony = HarmonyInstance.Create("dev.meepen.maxplayers");
