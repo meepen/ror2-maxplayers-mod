@@ -2,5 +2,8 @@
     "name": "16_Player_Mod",
     "description": "A mod to allow up to 16 players in a game",
     "website_url": "https://github.com/meepen/ror2-maxplayers-mod",
-    "version_number": "1.2.0"
+    "version_number": "1.2.1",
+    "dependencies": [
+        "meepen-Meepens_Mod_Loader-0.1.1"
+    ]
 }
